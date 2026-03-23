@@ -436,25 +436,7 @@ footer .footer-attr { font-size: 0.58em; color: var(--earth-brown); margin-top: 
     document.getElementById('langDropdown').classList.remove('open');
     localStorage.setItem('bridget-lang', lang);
   }
-  document.getElementById('langBtn').addEventListener('click', (e) => {
-    e.stopPropagation();
-    const dd = document.getElementById('langDropdown');
-    dd.classList.toggle('open');
-    document.getElementById('langBtn').setAttribute('aria-expanded', dd.classList.contains('open'));
-  });
-  document.querySelectorAll('.lang-option').forEach(btn => {
-    btn.addEventListener('click', () => setLang(btn.dataset.lang));
-  });
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.lang-select')) {
-      document.getElementById('langDropdown').classList.remove('open');
-      document.getElementById('langBtn').setAttribute('aria-expanded', 'false');
-    }
-  });
-  const saved = localStorage.getItem('bridget-lang');
-  const browserLang = navigator.language.slice(0, 2);
-  const initial = saved || (T[browserLang] ? browserLang : 'en');
-  setLang(initial);
+  // language selector disabled — English only for now
 
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
