@@ -223,6 +223,11 @@
       letter-spacing: 0.08em;
       color: var(--purple-light);
       transition: color var(--transition);
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .nav-header-right {
@@ -1357,11 +1362,7 @@
   <!-- Nav Header -->
   <nav class="nav-header" id="nav-header">
     <div class="nav-btn hidden" id="back-btn" onclick="goBack()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></div>
-    <a href="/" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:8px"><span class="nav-title" id="header-title">BRIDGET</span></a>
-    <div style="display:flex;gap:14px;margin-left:12px;">
-      <a href="/" style="text-decoration:none;color:var(--violet-soft,#8E5C7A);font-size:0.72em">Home</a>
-      <a href="/enterprise" style="text-decoration:none;color:var(--violet-soft,#8E5C7A);font-size:0.72em">Enterprise</a>
-    </div>
+    <span class="nav-title" id="header-title">BRIDGET</span>
     <div class="nav-header-right">
       <div class="lang-select">
         <button class="lang-btn" id="appLangBtn" onclick="event.stopPropagation(); document.getElementById('appLangDropdown').classList.toggle('open')">EN <span class="material-symbols-rounded" style="font-size:14px">expand_more</span></button>
