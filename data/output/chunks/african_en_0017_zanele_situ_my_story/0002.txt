@@ -1,0 +1,5 @@
+##
+  - License: [CC-BY]
+  - Text: Liz Sparg
+  - Illustration: Jesse Breytenbach, Graham Paterson
+  - Language: en

@@ -1,0 +1,12 @@
+{
+  "alice_s_adventures_in_wonderland": {
+    "source_file": "alice_s_adventures_in_wonderland.txt",
+    "num_chunks": 71,
+    "total_chars": 143785
+  },
+  "target_languages": {
+    "source_file": "target_languages.txt",
+    "num_chunks": 1,
+    "total_chars": 127
+  }
+}

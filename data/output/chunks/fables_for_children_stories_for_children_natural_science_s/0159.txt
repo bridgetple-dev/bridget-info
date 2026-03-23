@@ -1,0 +1,38 @@
+"Every time, whenever the pupils indicate a new method of decomposition,
+the teacher places the cubes on a ledge of the blackboard in the manner
+here indicated. Thus there will be four cubes on the upper ledge; two
+and two in a second place; in a third place the four cubes will be
+separated at some distance from each other; in a fourth place, three and
+one, and in a fifth one, one, and two.
+
+"(3) Decomposition in order. It may easily happen that the children will
+at once point out the decomposition of the number into component parts
+in order; even then the third exercise cannot be regarded as
+superfluous: Here we have formed four cubes of twos, of separate cubes,
+and of threes,--in what order had we best place the cubes on the board?
+With what shall the decomposition of the four cubes begin? With the
+decomposition into separate cubes. How are four cubes to be formed from
+separate cubes? We must take four times one cube. How are four cubes to
+be formed from twos, from a pair? We must take two twos,--twice two
+cubes, two pairs of cubes. How shall we afterward break up the four
+cubes? They can be formed of threes: for this purpose we take three and
+one, or one and three. The teacher explains to the pupils that the last
+decomposition, that is, 1 1 2, does not come under the accepted order,
+and is a modification of one of the first three."
+
+Why does Mr. Evtushévski not admit this last decomposition? Why must
+there be the order indicated by him? All that is a matter of mere
+arbitrariness and fancy. In reality, it is apparent to every thinking
+man that there is only one foundation for any composition and
+decomposition, and for the whole of mathematics. Here is the
+foundation: 1 + 1 = 2, 2 + 1 = 3, 3 + 1 = 4, and so forth,--precisely
+what the children learn at home, and what in common parlance is called
+counting to ten, to twenty, and so forth. This process is known to every
+pupil, and no matter what decomposition Mr. Evtushévski may make, it is
+to be explained from this one. A boy that can count to four, considers
+four as a whole, and so also three, and two, and one. Consequently, he
+knows that four was produced from the consecutive addition of one.
+Similarly he knows that four is produced by adding twice one to two,
+just as he knows twice one is two. What, then, are the children taught
+here? That which they know, or that process of counting which they must
+learn according to the teacher's fancy.

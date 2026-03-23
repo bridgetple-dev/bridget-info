@@ -1,0 +1,382 @@
+{
+  "a_christmas_carol": {
+    "source_file": "a_christmas_carol.txt",
+    "num_chunks": 61,
+    "total_chars": 156819
+  },
+  "aesop_s_fables": {
+    "source_file": "aesop_s_fables.txt",
+    "num_chunks": 20,
+    "total_chars": 52481
+  },
+  "african_en_0001_a_very_tall_man": {
+    "source_file": "african_en_0001_a_very_tall_man.txt",
+    "num_chunks": 1,
+    "total_chars": 528
+  },
+  "african_en_0004_goat_dog_and_cow": {
+    "source_file": "african_en_0004_goat_dog_and_cow.txt",
+    "num_chunks": 1,
+    "total_chars": 912
+  },
+  "african_en_0005_anansi_and_turtle": {
+    "source_file": "african_en_0005_anansi_and_turtle.txt",
+    "num_chunks": 3,
+    "total_chars": 3268
+  },
+  "african_en_0006_anansi_and_wisdom": {
+    "source_file": "african_en_0006_anansi_and_wisdom.txt",
+    "num_chunks": 1,
+    "total_chars": 1542
+  },
+  "african_en_0007_looking_for_water": {
+    "source_file": "african_en_0007_looking_for_water.txt",
+    "num_chunks": 1,
+    "total_chars": 262
+  },
+  "african_en_0008_what_are_you_doing": {
+    "source_file": "african_en_0008_what_are_you_doing.txt",
+    "num_chunks": 1,
+    "total_chars": 276
+  },
+  "african_en_0010_the_animals_of_uganda": {
+    "source_file": "african_en_0010_the_animals_of_uganda.txt",
+    "num_chunks": 1,
+    "total_chars": 1468
+  },
+  "african_en_0011_father_and_son": {
+    "source_file": "african_en_0011_father_and_son.txt",
+    "num_chunks": 1,
+    "total_chars": 752
+  },
+  "african_en_0012_my_village": {
+    "source_file": "african_en_0012_my_village.txt",
+    "num_chunks": 1,
+    "total_chars": 580
+  },
+  "african_en_0013_letter_to_mum": {
+    "source_file": "african_en_0013_letter_to_mum.txt",
+    "num_chunks": 1,
+    "total_chars": 1586
+  },
+  "african_en_0014_girl_called_norah": {
+    "source_file": "african_en_0014_girl_called_norah.txt",
+    "num_chunks": 1,
+    "total_chars": 832
+  },
+  "african_en_0015_together_were_strong": {
+    "source_file": "african_en_0015_together_were_strong.txt",
+    "num_chunks": 5,
+    "total_chars": 9680
+  },
+  "african_en_0016_my_friend_coco": {
+    "source_file": "african_en_0016_my_friend_coco.txt",
+    "num_chunks": 1,
+    "total_chars": 1828
+  },
+  "african_en_0017_zanele_situ_my_story": {
+    "source_file": "african_en_0017_zanele_situ_my_story.txt",
+    "num_chunks": 3,
+    "total_chars": 2652
+  },
+  "african_en_0018_why_is_yayeri_great": {
+    "source_file": "african_en_0018_why_is_yayeri_great.txt",
+    "num_chunks": 1,
+    "total_chars": 1180
+  },
+  "african_en_0019_my_first_day_at_the_market": {
+    "source_file": "african_en_0019_my_first_day_at_the_market.txt",
+    "num_chunks": 3,
+    "total_chars": 3389
+  },
+  "african_en_0020_pickpocketer": {
+    "source_file": "african_en_0020_pickpocketer.txt",
+    "num_chunks": 1,
+    "total_chars": 607
+  },
+  "african_en_0021_dembe_the_shopkeeper": {
+    "source_file": "african_en_0021_dembe_the_shopkeeper.txt",
+    "num_chunks": 1,
+    "total_chars": 784
+  },
+  "african_en_0022_my_baby_boy": {
+    "source_file": "african_en_0022_my_baby_boy.txt",
+    "num_chunks": 1,
+    "total_chars": 827
+  },
+  "african_en_0023_lion_that_wanted_friendship": {
+    "source_file": "african_en_0023_lion_that_wanted_friendship.txt",
+    "num_chunks": 1,
+    "total_chars": 1110
+  },
+  "african_en_0024_the_sick_hyena": {
+    "source_file": "african_en_0024_the_sick_hyena.txt",
+    "num_chunks": 1,
+    "total_chars": 1298
+  },
+  "african_en_0025_stealing": {
+    "source_file": "african_en_0025_stealing.txt",
+    "num_chunks": 1,
+    "total_chars": 574
+  },
+  "african_en_0026_imagine": {
+    "source_file": "african_en_0026_imagine.txt",
+    "num_chunks": 1,
+    "total_chars": 920
+  },
+  "african_en_0027_decision": {
+    "source_file": "african_en_0027_decision.txt",
+    "num_chunks": 1,
+    "total_chars": 1178
+  },
+  "african_en_0028_the_race": {
+    "source_file": "african_en_0028_the_race.txt",
+    "num_chunks": 1,
+    "total_chars": 1146
+  },
+  "african_en_0029_sniffles_the_crocodile_and_punch_the_butterfly": {
+    "source_file": "african_en_0029_sniffles_the_crocodile_and_punch_the_butterfly.txt",
+    "num_chunks": 3,
+    "total_chars": 3249
+  },
+  "alice_in_wonderland_a_dramatization_of_lewis_carroll_s_ali": {
+    "source_file": "alice_in_wonderland_a_dramatization_of_lewis_carroll_s_ali.txt",
+    "num_chunks": 30,
+    "total_chars": 82659
+  },
+  "alice_s_adventures_in_wonderland": {
+    "source_file": "alice_s_adventures_in_wonderland.txt",
+    "num_chunks": 55,
+    "total_chars": 143817
+  },
+  "andersen_s_fairy_tales": {
+    "source_file": "andersen_s_fairy_tales.txt",
+    "num_chunks": 121,
+    "total_chars": 298157
+  },
+  "anne_of_avonlea": {
+    "source_file": "anne_of_avonlea.txt",
+    "num_chunks": 201,
+    "total_chars": 487473
+  },
+  "anne_of_green_gables": {
+    "source_file": "anne_of_green_gables.txt",
+    "num_chunks": 227,
+    "total_chars": 558246
+  },
+  "atomic_interactions_all": {
+    "source_file": "atomic_interactions_all.txt",
+    "num_chunks": 1,
+    "total_chars": 23
+  },
+  "black_beauty": {
+    "source_file": "black_beauty.txt",
+    "num_chunks": 135,
+    "total_chars": 302547
+  },
+  "circuit_construction_kit_dc_all": {
+    "source_file": "circuit_construction_kit_dc_all.txt",
+    "num_chunks": 1,
+    "total_chars": 32
+  },
+  "energy_forms_and_changes_all": {
+    "source_file": "energy_forms_and_changes_all.txt",
+    "num_chunks": 1,
+    "total_chars": 28
+  },
+  "fables_for_children_stories_for_children_natural_science_s": {
+    "source_file": "fables_for_children_stories_for_children_natural_science_s.txt",
+    "num_chunks": 313,
+    "total_chars": 756757
+  },
+  "fairy_tales_of_hans_christian_andersen": {
+    "source_file": "fairy_tales_of_hans_christian_andersen.txt",
+    "num_chunks": 883,
+    "total_chars": 1987618
+  },
+  "forces_and_motion_basics_all": {
+    "source_file": "forces_and_motion_basics_all.txt",
+    "num_chunks": 1,
+    "total_chars": 29
+  },
+  "fractions_intro_all": {
+    "source_file": "fractions_intro_all.txt",
+    "num_chunks": 1,
+    "total_chars": 20
+  },
+  "friction_all": {
+    "source_file": "friction_all.txt",
+    "num_chunks": 1,
+    "total_chars": 12
+  },
+  "graphing_lines_all": {
+    "source_file": "graphing_lines_all.txt",
+    "num_chunks": 1,
+    "total_chars": 18
+  },
+  "gravity_and_orbits_all": {
+    "source_file": "gravity_and_orbits_all.txt",
+    "num_chunks": 1,
+    "total_chars": 22
+  },
+  "grimms_fairy_tales": {
+    "source_file": "grimms_fairy_tales.txt",
+    "num_chunks": 245,
+    "total_chars": 518159
+  },
+  "household_stories_by_the_brothers_grimm": {
+    "source_file": "household_stories_by_the_brothers_grimm.txt",
+    "num_chunks": 186,
+    "total_chars": 461241
+  },
+  "household_tales_by_brothers_grimm": {
+    "source_file": "household_tales_by_brothers_grimm.txt",
+    "num_chunks": 746,
+    "total_chars": 1475120
+  },
+  "in_search_of_the_castaways_a_romantic_narrative_of_the_loss": {
+    "source_file": "in_search_of_the_castaways_a_romantic_narrative_of_the_loss.txt",
+    "num_chunks": 288,
+    "total_chars": 805576
+  },
+  "index_of_the_project_gutenberg_works_of_the_brothers_grimm": {
+    "source_file": "index_of_the_project_gutenberg_works_of_the_brothers_grimm.txt",
+    "num_chunks": 11,
+    "total_chars": 20977
+  },
+  "little_women": {
+    "source_file": "little_women.txt",
+    "num_chunks": 403,
+    "total_chars": 1001803
+  },
+  "math_textbook": {
+    "source_file": "math_textbook.txt",
+    "num_chunks": 1,
+    "total_chars": 1879
+  },
+  "natural_selection_all": {
+    "source_file": "natural_selection_all.txt",
+    "num_chunks": 1,
+    "total_chars": 21
+  },
+  "peter_pan": {
+    "source_file": "peter_pan.txt",
+    "num_chunks": 101,
+    "total_chars": 254691
+  },
+  "states_of_matter_basics_all": {
+    "source_file": "states_of_matter_basics_all.txt",
+    "num_chunks": 1,
+    "total_chars": 28
+  },
+  "the_adventures_of_fleet_foot_and_her_fawns_a_true_to_nature": {
+    "source_file": "the_adventures_of_fleet_foot_and_her_fawns_a_true_to_nature.txt",
+    "num_chunks": 39,
+    "total_chars": 104096
+  },
+  "the_adventures_of_pinocchio": {
+    "source_file": "the_adventures_of_pinocchio.txt",
+    "num_chunks": 81,
+    "total_chars": 213249
+  },
+  "the_adventures_of_squirrel_fluffytail_a_picture_story_book": {
+    "source_file": "the_adventures_of_squirrel_fluffytail_a_picture_story_book.txt",
+    "num_chunks": 6,
+    "total_chars": 13927
+  },
+  "the_adventures_of_tom_sawyer": {
+    "source_file": "the_adventures_of_tom_sawyer.txt",
+    "num_chunks": 159,
+    "total_chars": 392054
+  },
+  "the_blue_bird_for_children_the_wonderful_adventures_of_tylt": {
+    "source_file": "the_blue_bird_for_children_the_wonderful_adventures_of_tylt.txt",
+    "num_chunks": 70,
+    "total_chars": 185207
+  },
+  "the_blue_fairy_book": {
+    "source_file": "the_blue_fairy_book.txt",
+    "num_chunks": 228,
+    "total_chars": 590921
+  },
+  "the_jungle_book": {
+    "source_file": "the_jungle_book.txt",
+    "num_chunks": 88,
+    "total_chars": 224652
+  },
+  "the_junior_classics_volume_1_fairy_and_wonder_tales": {
+    "source_file": "the_junior_classics_volume_1_fairy_and_wonder_tales.txt",
+    "num_chunks": 5,
+    "total_chars": 11759
+  },
+  "the_nursery_august_1881_vol_xxx_a_monthly_magazine_for_y": {
+    "source_file": "the_nursery_august_1881_vol_xxx_a_monthly_magazine_for_y.txt",
+    "num_chunks": 11,
+    "total_chars": 28586
+  },
+  "the_nursery_july_1881_vol_xxx_a_monthly_magazine_for_you": {
+    "source_file": "the_nursery_july_1881_vol_xxx_a_monthly_magazine_for_you.txt",
+    "num_chunks": 11,
+    "total_chars": 26730
+  },
+  "the_nursery_no_109_january_1876_vol_xix_a_monthly_ma": {
+    "source_file": "the_nursery_no_109_january_1876_vol_xix_a_monthly_ma.txt",
+    "num_chunks": 22,
+    "total_chars": 60711
+  },
+  "the_nursery_october_1881_vol_xxx_a_monthly_magazine_for": {
+    "source_file": "the_nursery_october_1881_vol_xxx_a_monthly_magazine_for.txt",
+    "num_chunks": 10,
+    "total_chars": 24937
+  },
+  "the_secret_garden": {
+    "source_file": "the_secret_garden.txt",
+    "num_chunks": 93,
+    "total_chars": 240902
+  },
+  "the_story_of_doctor_dolittle": {
+    "source_file": "the_story_of_doctor_dolittle.txt",
+    "num_chunks": 151,
+    "total_chars": 408009
+  },
+  "the_story_of_the_treasure_seekers_being_the_adventures_of_t": {
+    "source_file": "the_story_of_the_treasure_seekers_being_the_adventures_of_t.txt",
+    "num_chunks": 112,
+    "total_chars": 273441
+  },
+  "the_tenniel_illustrations_for_carroll_s_alice_in_wonderland": {
+    "source_file": "the_tenniel_illustrations_for_carroll_s_alice_in_wonderland.txt",
+    "num_chunks": 1,
+    "total_chars": 1769
+  },
+  "the_wind_in_the_willows": {
+    "source_file": "the_wind_in_the_willows.txt",
+    "num_chunks": 57,
+    "total_chars": 150687
+  },
+  "the_wonderful_wizard_of_oz": {
+    "source_file": "the_wonderful_wizard_of_oz.txt",
+    "num_chunks": 83,
+    "total_chars": 207462
+  },
+  "through_the_looking_glass": {
+    "source_file": "through_the_looking_glass.txt",
+    "num_chunks": 62,
+    "total_chars": 163468
+  },
+  "treasure_island": {
+    "source_file": "treasure_island.txt",
+    "num_chunks": 146,
+    "total_chars": 361494
+  },
+  "wave_on_a_string_all": {
+    "source_file": "wave_on_a_string_all.txt",
+    "num_chunks": 1,
+    "total_chars": 20
+  },
+  "æsop_s_fables_a_version_for_young_readers": {
+    "source_file": "æsop_s_fables_a_version_for_young_readers.txt",
+    "num_chunks": 61,
+    "total_chars": 151894
+  }
+}

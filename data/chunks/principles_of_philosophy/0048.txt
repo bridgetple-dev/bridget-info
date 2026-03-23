@@ -1,0 +1,29 @@
+Universals arise merely from our making use of one and the same idea
+in thinking of all individual objects between which there subsists a
+certain likeness; and when we comprehend all the objects represented
+by this idea under one name, this term likewise becomes universal.
+For example, when we see two stones, and do not regard their nature
+farther than to remark that there are two of them, we form the idea
+of a certain number, which we call the binary; and when we
+afterwards see two birds or two trees, and merely take notice of
+them so far as to observe that there are two of them, we again take
+up the same idea as before, which is, accordingly, universal; and we
+likewise give to this number the same universal appellation of
+binary. In the same way, when we consider a figure of three sides,
+we form a certain idea, which we call the idea of a triangle, and we
+afterwards make use of it as the universal to represent to our mind
+all other figures of three sides. But when we remark more
+particularly that of figures of three sides, some have a right angle
+and others not, we form the universal idea of a right-angled
+triangle, which being related to the preceding as more general, may
+be called species; and the right angle the universal difference by
+which right-angled triangles are distinguished from all others; and
+farther, because the square of the side which sustains the right
+angle is equal to the squares of the other two sides, and because
+this property belongs only to this species of triangles, we may call
+it the universal property of the species. Finally, if we suppose
+that of these triangles some are moved and others not, this will be
+their universal accident; and, accordingly, we commonly reckon five
+universals, viz., genus, species, difference, property, accident.
+
+LX. Of distinctions; and first of the real.

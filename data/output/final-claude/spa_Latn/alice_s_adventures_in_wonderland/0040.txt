@@ -1,0 +1,63 @@
+     1→"¡Cuéntanos una historia!", dijo la Liebre de Marzo.
+     2→
+     3→"¡Sí, por favor!", suplicó Alicia.
+     4→
+     5→"Y date prisa", añadió el Sombrerero, "o te volverás a dormir antes de que
+     6→termines".
+     7→
+     8→"Érase una vez tres hermanitas", empezó el Lirón con gran prisa; "y se llamaban
+     9→Elsie, Lacie y Tillie; y vivían en el fondo de un pozo..."
+    10→
+    11→"¿De qué vivían?", dijo Alicia, que siempre se interesaba mucho por las
+    12→cuestiones de comida y bebida.
+    13→
+    14→"Vivían de melaza", dijo el Lirón, después de pensar un minuto o dos.
+    15→
+    16→"No pudieron hacer eso, ya sabes", comentó Alicia amablemente; "habrían
+    17→enfermado".
+    18→
+    19→"Así fue", dijo el Lirón; "muy enfermas".
+    20→
+    21→Alicia intentó imaginarse cómo sería una forma de vivir tan extraordinaria,
+    22→pero la desconcertaba demasiado, así que continuó: "¿Pero por qué vivían en el
+    23→fondo de un pozo?"
+    24→
+    25→"Toma un poco más de té", dijo la Liebre de Marzo a Alicia, muy seriamente.
+    26→
+    27→"Todavía no he tomado nada", respondió Alicia en tono ofendido, "así que no
+    28→puedo tomar más".
+    29→
+    30→"Quieres decir que no puedes tomar menos", dijo el Sombrerero: "es muy fácil
+    31→tomar más que nada".
+    32→
+    33→"Nadie ha pedido tu opinión", dijo Alicia.
+    34→
+    35→"¿Quién está haciendo comentarios personales ahora?", preguntó el Sombrerero
+    36→triunfante.
+    37→
+    38→Alicia no supo muy bien qué decir a esto: así que se sirvió un poco de té y pan
+    39→con mantequilla, y luego se volvió hacia el Lirón y repitió su pregunta: "¿Por
+    40→qué vivían en el fondo de un pozo?"
+    41→
+    42→El Lirón volvió a tomarse un minuto o dos para pensarlo, y luego dijo: "Era un
+    43→pozo de melaza".
+    44→
+    45→"¡Eso no existe!", empezó Alicia muy enfadada, pero el Sombrerero y la Liebre
+    46→de Marzo hicieron "¡Chis! ¡chis!" y el Lirón comentó con mal humor: "Si no
+    47→puedes ser educada, será mejor que termines la historia tú misma".
+    48→
+    49→"¡No, por favor, continúa!", dijo Alicia muy humildemente; "no te interrumpiré
+    50→otra vez. Me atrevo a decir que puede haber uno".
+    51→
+    52→"¡Uno, desde luego!", dijo el Lirón indignado. Sin embargo, consintió en
+    53→continuar. "Y así estas tres hermanitas... estaban aprendiendo a sacar, ya
+    54→sabes..."
+    55→
+    56→"¿Qué sacaban?", dijo Alicia, olvidando por completo su promesa.
+    57→
+    58→"Melaza", dijo el Lirón, sin considerarlo en absoluto esta vez.
+    59→
+    60→"Quiero una taza limpia", interrumpió el Sombrerero: "movémonos todos un puesto
+    61→adelante".
+    62→
+    63→

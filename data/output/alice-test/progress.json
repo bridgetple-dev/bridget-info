@@ -1,0 +1,27 @@
+{
+  "book": "alice_s_adventures_in_wonderland",
+  "start_time": "2026-02-16T22:25:04.786481",
+  "completed": [
+    {
+      "language": "kor_Hang",
+      "size_kb": 1.5,
+      "ratio": 0.01,
+      "timestamp": "2026-02-16T22:25:49.628681"
+    },
+    {
+      "language": "jpn_Jpan",
+      "size_kb": 1.2,
+      "ratio": 0.0,
+      "timestamp": "2026-02-16T22:27:32.342992"
+    },
+    {
+      "language": "spa_Latn",
+      "size_kb": 1.7,
+      "ratio": 0.01,
+      "timestamp": "2026-02-16T22:29:16.972964"
+    }
+  ],
+  "failed": [],
+  "total": 3,
+  "end_time": "2026-02-16T22:29:16.973425"
+}

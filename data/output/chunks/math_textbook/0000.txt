@@ -1,0 +1,36 @@
+Chapter 1: Introduction to Linear Equations
+
+A linear equation is an equation that forms a straight line when graphed. The standard form of a linear equation is ax + b = 0, where a and b are constants and x is the variable.
+
+Linear equations are fundamental in mathematics and appear in many real-world applications. For example, calculating the total cost of items, predicting population growth, and converting temperatures between Celsius and Fahrenheit all involve linear equations.
+
+Section 1.1: Solving Simple Equations
+
+To solve a linear equation, we need to isolate the variable on one side of the equation. We do this by performing the same operation on both sides.
+
+Example: Solve 2x + 6 = 14
+
+Step 1: Subtract 6 from both sides: 2x = 8
+Step 2: Divide both sides by 2: x = 4
+
+The solution is x = 4. We can verify this by substituting back: 2(4) + 6 = 14. This is correct.
+
+Section 1.2: Word Problems
+
+Many real-world problems can be modeled using linear equations. The key is to identify the unknown quantity and set up an equation.
+
+Example: A store sells notebooks for 3 dollars each. If you have 21 dollars, how many notebooks can you buy?
+
+Let n be the number of notebooks. Then: 3n = 21, so n = 7.
+
+You can buy 7 notebooks.
+
+Section 1.3: Graphing Linear Equations
+
+To graph a linear equation, we need at least two points. We can find these by choosing values for x and calculating the corresponding y values.
+
+The slope of a line measures its steepness. A positive slope means the line goes up from left to right. A negative slope means the line goes down from left to right. A slope of zero means the line is horizontal.
+
+Summary
+
+In this chapter, we learned about linear equations, how to solve them, how to apply them to word problems, and how to graph them. These skills are essential for more advanced mathematics topics that we will explore in later chapters.

@@ -1,0 +1,13 @@
+# 주요 10개 언어
+# 총 10책 × 10언어 = 100개 파일
+
+kor_Hang
+jpn_Jpan
+zho_Hans
+spa_Latn
+fra_Latn
+deu_Latn
+rus_Cyrl
+ara_Arab
+hin_Deva
+por_Latn

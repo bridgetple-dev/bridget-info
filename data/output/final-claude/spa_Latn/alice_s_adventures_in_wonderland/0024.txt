@@ -1,0 +1,62 @@
+     1→"Bueno, puede que usted no lo haya experimentado todavía", dijo Alicia; "pero
+     2→cuando se convierta en crisálida —que lo hará algún día, ¿sabe?— y después en
+     3→mariposa, me imagino que le parecerá un poco raro, ¿no?"
+     4→
+     5→
+     6→"Ni lo más mínimo", dijo la Oruga.
+     7→
+     8→"Bueno, quizá los sentimientos de usted sean distintos", dijo Alicia; "lo único
+     9→que sé es que a mí me parecería muy raro".
+    10→
+    11→"¡A ti!", dijo la Oruga con desprecio. "¿Y quién eres tú?"
+    12→
+    13→Lo cual les devolvía al principio de la conversación. A Alicia le irritaba un
+    14→poco que la Oruga hiciera comentarios tan cortantes, así que se irguió y dijo
+    15→muy seria: "Creo que debería ser usted la primera en decirme quién es".
+    16→
+    17→
+    18→"¿Por qué?", dijo la Oruga.
+    19→
+    20→Era otra pregunta desconcertante; y como a Alicia no se le ocurría ninguna buena
+    21→razón, y la Oruga parecía de un humor muy desagradable, se dio la vuelta para
+    22→marcharse.
+    23→
+    24→"¡Vuelve!", la llamó la Oruga. "¡Tengo algo importante que decirte!"
+    25→
+    26→
+    27→Esto sonaba prometedor, desde luego: Alicia se dio la vuelta y regresó.
+    28→
+    29→"No pierdas los nervios", dijo la Oruga.
+    30→
+    31→"¿Eso es todo?", dijo Alicia, tragándose la rabia lo mejor que pudo.
+    32→
+    33→"No", dijo la Oruga.
+    34→
+    35→Alicia pensó que bien podía esperar, ya que no tenía otra cosa que hacer, y
+    36→quizá al final le dijera algo que valiera la pena. Durante unos minutos la Oruga
+    37→fumó en silencio, pero por fin descruzó los brazos, se sacó la pipa de agua de
+    38→la boca y dijo: "Así que crees que has cambiado, ¿verdad?"
+    39→
+    40→
+    41→"Me temo que sí, señora", dijo Alicia; "no consigo recordar las cosas como
+    42→antes... ¡y no mantengo el mismo tamaño ni diez minutos seguidos!"
+    43→
+    44→"¿Qué cosas no consigues recordar?", dijo la Oruga.
+    45→
+    46→"Pues, por ejemplo, intenté recitar "Cómo el pequeño..." pero me salió todo
+    47→diferente", contestó Alicia con voz muy apagada.
+    48→
+    49→"Recita "Es usted viejo, padre Guillermo"", dijo la Oruga.
+    50→
+    51→Alicia cruzó las manos y empezó:
+    52→
+    53→""Es usted viejo, padre Guillermo", le dijo el joven,
+    54→    "y su pelo se ha puesto muy blanco;
+    55→y sin embargo se pone de cabeza sin parar...
+    56→    ¿No le parece impropio a su edad?"
+    57→
+    58→"Cuando era joven", el padre Guillermo le contestó a su hijo,
+    59→    "temía que me dañara el cerebro;
+    60→pero ahora que estoy seguro de no tener ninguno,
+    61→    pues lo hago una y otra vez sin miedo".
+    62→
