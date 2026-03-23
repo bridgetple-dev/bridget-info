@@ -1468,7 +1468,7 @@
     </div>
     <p id="bridge-progress-detail" style="color:rgba(255,255,255,0.35); font-family:'Outfit',monospace; font-size:0.7rem; margin-top:6px; letter-spacing:0.15em;">0 / 0</p>
   </div>
-  <button id="bridge-stop-btn" onclick="stopTranslation()" style="display:none; position:fixed; bottom:70px; left:50%; transform:translateX(-50%); z-index:10000; background:rgba(255,80,80,0.15); border:1px solid rgba(255,100,100,0.3); color:rgba(255,180,180,0.9); padding:10px 32px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:0.8rem; letter-spacing:0.1em; cursor:pointer; backdrop-filter:blur(10px);">종료하기</button>
+  <button id="bridge-stop-btn" onclick="stopTranslation()" style="display:none; position:fixed; bottom:70px; left:50%; transform:translateX(-50%); z-index:10000; background:rgba(255,80,80,0.15); border:1px solid rgba(255,100,100,0.3); color:rgba(255,180,180,0.9); padding:10px 32px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:0.8rem; letter-spacing:0.1em; cursor:pointer; backdrop-filter:blur(10px);">Stop</button>
   <button id="bridge-close-btn" onclick="closeBridgeOverlay()" style="display:none; position:fixed; bottom:30px; left:50%; transform:translateX(-50%); z-index:10000; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:rgba(255,255,255,0.7); padding:10px 32px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:0.8rem; letter-spacing:0.1em; cursor:pointer; backdrop-filter:blur(10px);" data-i18n="br.goBack">Go Back</button>
   <div style="position:fixed; bottom:10px; left:50%; transform:translateX(-50%); z-index:10000; color:rgba(255,255,255,0.2); font-size:0.6rem; font-family:'Outfit',sans-serif; letter-spacing:0.1em;">Demo version — improvements coming soon</div>
 </div>
@@ -2942,7 +2942,7 @@
     translationState.isTranslating = false;
     document.getElementById('bridge-stop-btn').style.display = 'none';
     logTranslationAttempt(_currentTranslationLang, 'stopped');
-    alert('기여해주셔서 감사합니다.\nBRIDGET 검증 프로세스를 거친 후 업데이트됩니다.');
+    alert('Thank you for your contribution.\nIt will be updated after the BRIDGET verification process.');
     closeBridgeOverlay();
   }
 
@@ -3003,7 +3003,7 @@
       if (_translationStopped) return;
       const pct = Math.floor(15 + (i / numChunks) * 80);
       updateBridgeProgress(t('demo.block') + ' ' + (i + 1) + '...', pct, (i + 1) + ' / ' + numChunks + ' ' + t('demo.blocks'));
-      await new Promise(r => setTimeout(r, 60 + Math.random() * 40));
+      await new Promise(r => setTimeout(r, Math.floor(300000 / numChunks) + Math.random() * 500));
     }
 
     if (_translationStopped) return;
@@ -3015,7 +3015,7 @@
     document.getElementById('bridge-stop-btn').style.display = 'none';
     translationState.isTranslating = false;
     logTranslationAttempt(targetLang, 'completed');
-    alert('기여해주셔서 감사합니다.\nBRIDGET 검증 프로세스를 거친 후 업데이트됩니다.');
+    alert('Thank you for your contribution.\nIt will be updated after the BRIDGET verification process.');
   }
 
   // ===================================================================
