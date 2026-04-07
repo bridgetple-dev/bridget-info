@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — BRIDGET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-mid: #3a3a5a;
+    --ink-light: #6a6a8a;
+    --ink-faint: #a0a0c0;
+    --paper: #faf9f6;
+    --paper-warm: #f4f0e8;
+    --accent: #c4501a;
+    --rule: #d8d0c0;
+    --rule-light: #ede8e0;
+    --display: 'Playfair Display', Georgia, serif;
+    --body-serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body-serif);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  /* TOP BAR */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    height: 58px; padding: 0 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .logo {
+    font-family: var(--display);
+    font-size: 17px; font-weight: 600;
+    letter-spacing: 0.1em; color: var(--ink);
+    text-decoration: none;
+  }
+  .logo em { color: var(--accent); font-style: normal; }
+
+  .nav { display: flex; gap: 28px; list-style: none; }
+  .nav a {
+    font-family: var(--sans); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-light); text-decoration: none; transition: color 0.2s;
+  }
+  .nav a:hover, .nav a.on { color: var(--accent); }
+
+  /* LAYOUT */
+  .page { max-width: 760px; margin: 0 auto; padding: 110px 40px 100px; }
+
+  /* HERO */
+  .hero {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 44px; margin-bottom: 52px;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--sans); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 14px;
+  }
+
+  .hero-title {
+    font-family: var(--display);
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 600; line-height: 1.15;
+    color: var(--ink); margin-bottom: 6px;
+  }
+
+  .hero-sub {
+    font-family: var(--display);
+    font-size: clamp(15px, 2vw, 19px);
+    font-style: italic; color: var(--ink-faint);
+    margin-bottom: 22px;
+  }
+
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 28px; }
+  .meta-item { font-family: var(--sans); font-size: 12px; color: var(--ink-light); }
+  .meta-item b { color: var(--ink); font-weight: 500; }
+
+  /* WARNING BOX */
+  .warn {
+    background: #fffaf7;
+    border: 1px solid #f0d0b8;
+    border-left: 4px solid var(--accent);
+    padding: 18px 22px; margin-bottom: 48px;
+    border-radius: 0 3px 3px 0;
+  }
+  .warn-label {
+    font-family: var(--sans); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 6px;
+  }
+  .warn p { font-size: 14px; color: var(--ink-mid); line-height: 1.75; }
+
+  /* TOC */
+  .toc {
+    background: var(--paper-warm);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px; margin-bottom: 52px;
+  }
+  .toc-label {
+    font-family: var(--sans); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-light); margin-bottom: 14px;
+  }
+  .toc-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 5px 20px;
+    list-style: none;
+  }
+  .toc-grid a {
+    font-family: var(--sans); font-size: 12.5px; color: var(--ink-light);
+    text-decoration: none; transition: color 0.2s;
+    display: flex; align-items: baseline; gap: 7px;
+  }
+  .toc-grid a:hover { color: var(--accent); }
+  .toc-n { font-size: 10px; color: var(--accent); font-weight: 500; min-width: 22px; }
+
+  /* SECTION */
+  .sec { margin-bottom: 48px; scroll-margin-top: 76px; }
+
+  .sec-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px; margin-bottom: 20px;
+  }
+
+  .sec-n {
+    font-family: var(--display); font-style: italic;
+    font-size: 12px; color: var(--accent); min-width: 28px;
+  }
+
+  .sec-title {
+    font-family: var(--display);
+    font-size: 19px; font-weight: 600; color: var(--ink);
+  }
+
+  .sec-body { padding-left: 42px; }
+
+  p.txt { margin-bottom: 14px; color: var(--ink-mid); }
+
+  /* ARTICLE */
+  .arts { list-style: none; margin-bottom: 14px; }
+  .arts li { display: flex; gap: 10px; margin-bottom: 10px; line-height: 1.8; }
+  .art-n { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--accent); min-width: 22px; padding-top: 2px; }
+  .art-t { flex: 1; color: var(--ink-mid); }
+
+  /* SUB LIST */
+  .sub { list-style: none; margin: 10px 0 12px 18px; border-left: 2px solid var(--rule-light); padding-left: 16px; }
+  .sub li { font-size: 14px; color: var(--ink-light); margin-bottom: 7px; line-height: 1.75; }
+  .sub li::before { content: attr(data-m) "  "; color: var(--accent); font-weight: 500; font-size: 11px; }
+
+  /* JURISDICTION TAG */
+  .jur {
+    display: inline-block; font-family: var(--sans); font-size: 10px; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px;
+    border: 1px solid currentColor; border-radius: 2px; margin-right: 6px;
+    vertical-align: middle;
+  }
+  .jur-eu { color: #2060a0; }
+  .jur-us { color: #a04020; }
+  .jur-all { color: #206040; }
+
+  /* IMPORTANT BOX */
+  .imp {
+    background: var(--paper-warm); border: 1px solid var(--rule);
+    padding: 16px 20px; margin: 16px 0; font-size: 14px; color: var(--ink-mid);
+    line-height: 1.8;
+  }
+  .imp strong { color: var(--ink); font-weight: 500; }
+
+  /* FOOTER */
+  .footer {
+    margin-top: 72px; padding-top: 28px;
+    border-top: 2px solid var(--ink);
+    display: flex; justify-content: space-between;
+    align-items: flex-end; flex-wrap: wrap; gap: 14px;
+  }
+  .footer-brand {
+    font-family: var(--display); font-size: 18px; font-weight: 600;
+    letter-spacing: 0.08em; color: var(--ink);
+  }
+  .footer-brand em { color: var(--accent); font-style: normal; }
+  .footer-links { display: flex; gap: 20px; list-style: none; }
+  .footer-links a {
+    font-family: var(--sans); font-size: 11.5px; color: var(--ink-light);
+    text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-copy {
+    font-family: var(--sans); font-size: 11px; color: var(--ink-faint);
+    margin-top: 10px; width: 100%;
+  }
+  a.inline { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  a.inline:hover { opacity: 0.8; }
+
+  @media (max-width: 600px) {
+    .page { padding: 96px 22px 80px; }
+    .topbar { padding: 0 22px; }
+    .nav { display: none; }
+    .sec-body { padding-left: 0; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="logo" href="#">BRIDG<em>E</em>T</a>
+  <ul class="nav">
+    <li><a href="/tos" class="on">Terms of Service</a></li>
+    <li><a href="/privacy">Privacy Policy</a></li>
+    <li><a href="/">Home</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-eyebrow">Legal Document</p>
+    <h1 class="hero-title">Terms of Service</h1>
+    <p class="hero-sub">BRIDGET AI Translation Platform</p>
+    <div class="hero-meta">
+      <span class="meta-item"><b>Effective Date</b> April 7, 2026</span>
+      <span class="meta-item"><b>Version</b> 1.0</span>
+      <span class="meta-item"><b>Jurisdiction</b> Global · GDPR · CCPA</span>
+    </div>
+  </div>
+
+  <!-- AI NOTICE -->
+  <div class="warn">
+    <p class="warn-label">⚡ AI Service Disclosure — Transparency Notice</p>
+    <p>BRIDGET uses artificial intelligence technology, including large language models (LLMs) and multimodal AI pipelines, to deliver translation services. All translation outputs are AI-generated. By using this service, you acknowledge this disclosure as required under applicable AI regulations including the Korean AI Basic Act (effective January 22, 2026) and the EU AI Act.</p>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <p class="toc-label">Table of Contents</p>
+    <ul class="toc-grid">
+      <li><a href="#s1"><span class="toc-n">01</span> Definitions</a></li>
+      <li><a href="#s2"><span class="toc-n">02</span> Acceptance of Terms</a></li>
+      <li><a href="#s3"><span class="toc-n">03</span> Description of Service</a></li>
+      <li><a href="#s4"><span class="toc-n">04</span> AI Technology Disclosure</a></li>
+      <li><a href="#s5"><span class="toc-n">05</span> Eligibility &amp; Accounts</a></li>
+      <li><a href="#s6"><span class="toc-n">06</span> Intellectual Property</a></li>
+      <li><a href="#s7"><span class="toc-n">07</span> Copyright &amp; Source Content</a></li>
+      <li><a href="#s8"><span class="toc-n">08</span> Prohibited Uses</a></li>
+      <li><a href="#s9"><span class="toc-n">09</span> Payment Terms</a></li>
+      <li><a href="#s10"><span class="toc-n">10</span> Disclaimer of Warranties</a></li>
+      <li><a href="#s11"><span class="toc-n">11</span> Limitation of Liability</a></li>
+      <li><a href="#s12"><span class="toc-n">12</span> Indemnification</a></li>
+      <li><a href="#s13"><span class="toc-n">13</span> Termination</a></li>
+      <li><a href="#s14"><span class="toc-n">14</span> Governing Law</a></li>
+      <li><a href="#s15"><span class="toc-n">15</span> Changes to Terms</a></li>
+      <li><a href="#s16"><span class="toc-n">16</span> Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1">
+    <div class="sec-head"><span class="sec-n">01</span><h2 class="sec-title">Definitions</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">1.1</span><span class="art-t"><b>"BRIDGET," "we," "us," or "our"</b> refers to BRIDGET, an AI translation service operated by Im Suan, Republic of Korea.</span></li>
+        <li><span class="art-n">1.2</span><span class="art-t"><b>"Service"</b> means the AI-powered translation platform, including all features, tools, APIs, and related services provided by BRIDGET.</span></li>
+        <li><span class="art-n">1.3</span><span class="art-t"><b>"User," "you," or "your"</b> means any individual or legal entity accessing or using the Service.</span></li>
+        <li><span class="art-n">1.4</span><span class="art-t"><b>"Source Content"</b> means any text, document, or material submitted by you for translation.</span></li>
+        <li><span class="art-n">1.5</span><span class="art-t"><b>"Translation Output"</b> means the translated content generated by the Service from your Source Content.</span></li>
+        <li><span class="art-n">1.6</span><span class="art-t"><b>"Confidential Information"</b> means any non-public information disclosed by either party in connection with the Service.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2">
+    <div class="sec-head"><span class="sec-n">02</span><h2 class="sec-title">Acceptance of Terms</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">2.1</span><span class="art-t">By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.</span></li>
+        <li><span class="art-n">2.2</span><span class="art-t">If you are entering into these Terms on behalf of a company or other legal entity, you represent that you have the authority to bind that entity.</span></li>
+        <li><span class="art-n">2.3</span><span class="art-t">These Terms apply to all users globally. Where applicable law provides greater rights than stated here, those rights are not waived by these Terms.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3">
+    <div class="sec-head"><span class="sec-n">03</span><h2 class="sec-title">Description of Service</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">3.1</span><span class="art-t">BRIDGET provides AI-powered translation services across multiple languages, delivered via a 7-agent translation pipeline and quality assurance framework (BQS).</span></li>
+        <li><span class="art-n">3.2</span><span class="art-t">Services are available via B2B direct engagement, self-service SaaS subscription, and API access.</span></li>
+        <li><span class="art-n">3.3</span><span class="art-t">We reserve the right to modify, suspend, or discontinue any part of the Service with reasonable prior notice, except in cases of emergency or legal obligation.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="sec" id="s4">
+    <div class="sec-head"><span class="sec-n">04</span><h2 class="sec-title">AI Technology Disclosure</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">4.1</span><span class="art-t"><b>AI-Generated Outputs.</b> All translations produced by the Service are generated by artificial intelligence. BRIDGET does not guarantee that any Translation Output is error-free, accurate, or suitable for any particular purpose.</span></li>
+        <li><span class="art-n">4.2</span><span class="art-t"><b>No Training on Your Data.</b> Your Source Content and Translation Outputs will <em>not</em> be used to train, fine-tune, or improve any AI model — by BRIDGET or by any third-party AI provider used in the pipeline. This is a contractual commitment, not a default setting.</span></li>
+        <li><span class="art-n">4.3</span><span class="art-t"><b>Third-Party AI Models.</b> The Service uses third-party AI APIs (including but not limited to Anthropic). We contractually require these providers to not use your data for model training.</span></li>
+        <li><span class="art-n">4.4</span><span class="art-t"><b>High-Stakes Use.</b> AI translation should not be solely relied upon for legal, medical, financial, or safety-critical documents without independent professional review.</span></li>
+        <li><span class="art-n">4.5</span><span class="art-t"><b>AI Act Compliance.</b> BRIDGET is classified as a generative AI and multimodal AI service provider under applicable AI regulations. We comply with transparency obligations under the Korean AI Basic Act and relevant provisions of the EU AI Act.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="sec" id="s5">
+    <div class="sec-head"><span class="sec-n">05</span><h2 class="sec-title">Eligibility &amp; Accounts</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">5.1</span><span class="art-t">You must be at least 18 years of age (or the age of legal majority in your jurisdiction) to use the Service.</span></li>
+        <li><span class="art-n">5.2</span><span class="art-t">You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</span></li>
+        <li><span class="art-n">5.3</span><span class="art-t">You agree to provide accurate, current, and complete information and to promptly update such information as necessary.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 6 -->
+  <section class="sec" id="s6">
+    <div class="sec-head"><span class="sec-n">06</span><h2 class="sec-title">Intellectual Property</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">6.1</span><span class="art-t"><b>BRIDGET IP.</b> All rights in the Service — including the translation pipeline architecture, AI workflow system, prompt structures, quality scoring framework (BQS), software, branding, and documentation — are owned by BRIDGET and protected by intellectual property law. No license to these is granted except as expressly stated.</span></li>
+        <li><span class="art-n">6.2</span><span class="art-t"><b>Translation Output Ownership.</b> Subject to full payment, BRIDGET assigns to you all copyright in the Translation Output derived from your Source Content ("work made for hire" or equivalent). BRIDGET retains no ownership rights in the specific content of Translation Outputs.</span></li>
+        <li><span class="art-n">6.3</span><span class="art-t"><b>Limited License to BRIDGET.</b> You grant BRIDGET a limited, non-exclusive, non-transferable license to process your Source Content solely to provide the Service. This license terminates upon deletion of the content per our retention schedule.</span></li>
+        <li><span class="art-n">6.4</span><span class="art-t"><b>Scope of Use.</b> Unless expressly agreed in writing, the rights granted to you in a Translation Output do not include rights to publish, distribute, broadcast, create audiobook versions, film adaptations, or retranslate into third languages. Specific rights must be agreed upon separately.</span></li>
+        <li><span class="art-n">6.5</span><span class="art-t"><b>Reverse Engineering.</b> You may not reverse engineer, decompile, or attempt to extract the source code, prompts, model parameters, or methods underlying the Service.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 7 -->
+  <section class="sec" id="s7">
+    <div class="sec-head"><span class="sec-n">07</span><h2 class="sec-title">Copyright &amp; Source Content</h2></div>
+    <div class="sec-body">
+      <div class="imp">
+        <strong>Important:</strong> Translation is a derivative work under most copyright laws. You must hold the right to authorize translation of any content you submit. Submitting copyrighted content without authorization may expose you — and potentially BRIDGET — to copyright infringement claims.
+      </div>
+      <ul class="arts">
+        <li><span class="art-n">7.1</span><span class="art-t"><b>Your Warranty.</b> You represent and warrant that (a) you own or have obtained all necessary rights, licenses, and permissions to submit the Source Content for translation, and (b) the Source Content does not infringe any third party's copyright, trademark, or other intellectual property rights.</span></li>
+        <li><span class="art-n">7.2</span><span class="art-t"><b>Indemnification for IP Breach.</b> If any third party brings a claim against BRIDGET arising from your breach of Section 7.1, you agree to indemnify, defend, and hold BRIDGET harmless from all resulting costs, damages, and legal fees.</span></li>
+        <li><span class="art-n">7.3</span><span class="art-t"><b>No Verification Obligation.</b> BRIDGET is not obligated to independently verify the copyright status of Source Content. We rely entirely on your warranty in Section 7.1.</span></li>
+        <li><span class="art-n">7.4</span><span class="art-t"><b>Platform Rights.</b> Rights granted to you in a Translation Output are separate and distinct for each of: print publication, e-book, audiobook, video/film adaptation, re-translation rights, and digital distribution. Rights not expressly granted in writing are reserved.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 8 -->
+  <section class="sec" id="s8">
+    <div class="sec-head"><span class="sec-n">08</span><h2 class="sec-title">Prohibited Uses</h2></div>
+    <div class="sec-body">
+      <p class="txt">You agree not to use the Service for:</p>
+      <ul class="sub">
+        <li data-m="(a)">Any unlawful purpose or in violation of any applicable regulation;</li>
+        <li data-m="(b)">Translating content that infringes any third party's intellectual property rights;</li>
+        <li data-m="(c)">Generating or distributing spam, phishing, or deceptive content;</li>
+        <li data-m="(d)">Creating, distributing, or facilitating hate speech, harassment, or content that incites violence or discrimination;</li>
+        <li data-m="(e)">Translating content involving child sexual abuse material or exploitation of minors (strictly prohibited and will be reported to authorities);</li>
+        <li data-m="(f)">Circumventing or attempting to circumvent security measures, rate limits, or access controls of the Service;</li>
+        <li data-m="(g)">Systematic scraping, bulk harvesting, or any automated access that burdens the Service infrastructure;</li>
+        <li data-m="(h)">Reselling or sublicensing access to the Service without BRIDGET's prior written consent.</li>
+      </ul>
+      <p class="txt" style="margin-top:12px; font-size:14px; color:var(--ink-light);">Violations may result in immediate account suspension and potential legal action.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 9 -->
+  <section class="sec" id="s9">
+    <div class="sec-head"><span class="sec-n">09</span><h2 class="sec-title">Payment Terms</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">9.1</span><span class="art-t">Fees are as specified in the applicable order form, pricing page, or subscription plan.</span></li>
+        <li><span class="art-n">9.2</span><span class="art-t">All fees are exclusive of taxes. You are responsible for all applicable taxes, including VAT/GST, unless BRIDGET is required to collect such taxes.</span></li>
+        <li><span class="art-n">9.3</span><span class="art-t">Subscription fees are billed in advance. Usage-based fees are billed in arrears.</span></li>
+        <li><span class="art-n">9.4</span><span class="art-t">Overdue amounts will accrue interest at 1.5% per month (or the maximum rate permitted by law, whichever is lower).</span></li>
+        <li><span class="art-n">9.5</span><span class="art-t"><b>Refunds.</b> Fees are non-refundable except as required by applicable law or as expressly stated in a separate agreement. EU/UK consumers retain statutory cancellation rights under applicable consumer protection law.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 10 -->
+  <section class="sec" id="s10">
+    <div class="sec-head"><span class="sec-n">10</span><h2 class="sec-title">Disclaimer of Warranties</h2></div>
+    <div class="sec-body">
+      <p class="txt">THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, BRIDGET EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+      <ul class="arts" style="margin-top:14px;">
+        <li><span class="art-n">10.1</span><span class="art-t">BRIDGET does not warrant that Translation Outputs are accurate, complete, or free of errors.</span></li>
+        <li><span class="art-n">10.2</span><span class="art-t">BRIDGET does not warrant uninterrupted, timely, or secure access to the Service.</span></li>
+        <li><span class="art-n">10.3</span><span class="art-t"><span class="jur jur-eu">EU/UK</span> Nothing in these Terms limits or excludes any statutory rights you may have as a consumer under applicable law that cannot be waived by contract.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 11 -->
+  <section class="sec" id="s11">
+    <div class="sec-head"><span class="sec-n">11</span><h2 class="sec-title">Limitation of Liability</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">11.1</span><span class="art-t">TO THE MAXIMUM EXTENT PERMITTED BY LAW, BRIDGET'S TOTAL CUMULATIVE LIABILITY ARISING OUT OF OR RELATED TO THE SERVICE SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNTS PAID BY YOU TO BRIDGET IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM OR (B) USD $100.</span></li>
+        <li><span class="art-n">11.2</span><span class="art-t">IN NO EVENT SHALL BRIDGET BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, LOSS OF DATA, LOSS OF GOODWILL, OR BUSINESS INTERRUPTION, EVEN IF ADVISED OF THE POSSIBILITY.</span></li>
+        <li><span class="art-n">11.3</span><span class="art-t"><span class="jur jur-eu">EU/UK</span> These limitations do not apply to liability for death or personal injury caused by negligence, fraud, or any other liability that cannot be excluded under applicable law.</span></li>
+        <li><span class="art-n">11.4</span><span class="art-t"><span class="jur jur-us">California</span> If you are a California consumer, nothing here limits rights under California law that cannot be waived by contract.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 12 -->
+  <section class="sec" id="s12">
+    <div class="sec-head"><span class="sec-n">12</span><h2 class="sec-title">Indemnification</h2></div>
+    <div class="sec-body">
+      <p class="txt">You agree to defend, indemnify, and hold harmless BRIDGET and its officers, employees, and agents from and against any claims, damages, obligations, losses, liabilities, costs, and expenses (including legal fees) arising from: (a) your use of the Service; (b) your violation of these Terms; (c) your violation of any third party's rights, including intellectual property rights; or (d) any content you submit to the Service.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 13 -->
+  <section class="sec" id="s13">
+    <div class="sec-head"><span class="sec-n">13</span><h2 class="sec-title">Termination</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">13.1</span><span class="art-t">Either party may terminate these Terms at any time. You may stop using the Service. BRIDGET may terminate or suspend your access immediately for material breach of these Terms.</span></li>
+        <li><span class="art-n">13.2</span><span class="art-t">Upon termination: (a) your right to use the Service ceases; (b) we will delete your Source Content in accordance with our data retention policy; (c) provisions that by their nature should survive termination (including Sections 6, 7, 10, 11, 12, 14) will survive.</span></li>
+        <li><span class="art-n">13.3</span><span class="art-t"><span class="jur jur-eu">EU</span> Consumers in the EU/EEA have a 14-day right of withdrawal from service contracts under applicable consumer protection law, subject to exceptions for services already delivered with your consent.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 14 -->
+  <section class="sec" id="s14">
+    <div class="sec-head"><span class="sec-n">14</span><h2 class="sec-title">Governing Law &amp; Dispute Resolution</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">14.1</span><span class="art-t">These Terms are governed by the laws of the Republic of Korea, without regard to its conflict of law provisions.</span></li>
+        <li><span class="art-n">14.2</span><span class="art-t">Any dispute arising from these Terms shall first be submitted to good-faith negotiation. If unresolved within 30 days, disputes shall be submitted to the Seoul Central District Court as the court of first instance.</span></li>
+        <li><span class="art-n">14.3</span><span class="art-t"><span class="jur jur-eu">EU/UK</span> If you are a consumer habitually resident in the EU or UK, you may also benefit from mandatory consumer protection provisions of your country of residence. Nothing in this Section deprives you of that protection.</span></li>
+        <li><span class="art-n">14.4</span><span class="art-t"><span class="jur jur-us">US</span> For US users, you may also use the EU-US Data Privacy Framework dispute resolution mechanisms for data-related complaints.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 15 -->
+  <section class="sec" id="s15">
+    <div class="sec-head"><span class="sec-n">15</span><h2 class="sec-title">Changes to Terms</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">15.1</span><span class="art-t">We may update these Terms from time to time. We will provide at least 30 days' notice of material changes via email or prominent notice on the Service.</span></li>
+        <li><span class="art-n">15.2</span><span class="art-t">Your continued use of the Service after the effective date of changes constitutes acceptance of the updated Terms.</span></li>
+        <li><span class="art-n">15.3</span><span class="art-t">If you do not agree to the updated Terms, you must stop using the Service before the effective date.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECTION 16 -->
+  <section class="sec" id="s16">
+    <div class="sec-head"><span class="sec-n">16</span><h2 class="sec-title">Contact</h2></div>
+    <div class="sec-body">
+      <p class="txt">For questions about these Terms, please contact:</p>
+      <div class="imp">
+        <strong>BRIDGET — Legal &amp; Compliance</strong><br>
+        Operator: Im Suan<br>
+        Email: <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a><br>
+        <span style="font-size:13px; color:var(--ink-light);">We aim to respond to all legal inquiries within 5 business days.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>
+      <div class="footer-brand">BRIDG<em>E</em>T</div>
+      <p class="footer-copy">© 2026 BRIDGET. All rights reserved. Every language is a bridge worth crossing.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/tos">Terms of Service</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="mailto:bridget7@proton.me">Contact</a></li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

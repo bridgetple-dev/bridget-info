@@ -166,6 +166,10 @@ footer { background: var(--earth-dark); padding: 50px 30px 40px; text-align: cen
 .footer-links a:hover { color: var(--cream); }
 footer .footer-legal { font-size: 0.62em; color: var(--earth-brown); margin-bottom: 2px; }
 footer .footer-attr { font-size: 0.58em; color: var(--earth-brown); margin-top: 10px; opacity: 0.6; }
+.footer-legal-links { display: flex; justify-content: center; gap: 8px; margin-top: 14px; font-size: 0.65em; }
+.footer-legal-links a { color: var(--earth-warm); text-decoration: none; transition: color 0.3s; }
+.footer-legal-links a:hover { color: var(--cream); }
+.footer-legal-links span { color: var(--earth-brown); }
 
 /* === ANIMATIONS === */
 .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -411,6 +415,7 @@ footer .footer-attr { font-size: 0.58em; color: var(--earth-brown); margin-top: 
   <p class="footer-legal">Educational content is licensed under CC BY 4.0.</p>
   <p class="footer-legal">The BRIDGET pipeline and software are proprietary.</p>
   <p class="footer-attr">Machine translation powered by OPUS-MT (Helsinki-NLP), licensed under CC-BY 4.0</p>
+  <div class="footer-legal-links"><a href="/tos">Terms of Service</a><span>|</span><a href="/privacy">Privacy Policy</a></div>
 </footer>
 
 <script src="i18n-landing.js"></script>

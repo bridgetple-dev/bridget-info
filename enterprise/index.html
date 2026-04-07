@@ -234,6 +234,10 @@ body { background: var(--white-soft); font-family: var(--font-body); color: var(
 .footer-links a { color: var(--earth-warm); text-decoration: none; font-size: 0.78em; transition: color 0.3s; }
 .footer-links a:hover { color: var(--cream); }
 .footer-copy { font-size: 0.68em; color: var(--earth-brown); }
+.footer-legal-links { display: flex; justify-content: center; gap: 8px; margin-top: 14px; font-size: 0.65em; }
+.footer-legal-links a { color: var(--earth-warm); text-decoration: none; transition: color 0.3s; }
+.footer-legal-links a:hover { color: var(--cream); }
+.footer-legal-links span { color: var(--earth-brown); }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -571,6 +575,7 @@ body { background: var(--white-soft); font-family: var(--font-body); color: var(
         <button class="btn btn-primary" id="waitlist-btn">Free Sample &rarr;</button>
       </form>
       <div class="cta-note" id="waitlist-msg">Free sample: 500 words &times; 3 languages + MQM quality report. No commitment.</div>
+      <div style="font-size: 0.7em; color: var(--earth-warm); margin-top: 8px;">By submitting, you agree to our <a href="/tos" style="color: var(--gold); text-decoration: none;">Terms</a> and <a href="/privacy" style="color: var(--gold); text-decoration: none;">Privacy Policy</a>.</div>
       <div class="dropzone" id="dropzone">
         <input type="file" id="file-input" multiple hidden>
         <div class="dropzone-text"><strong>Drag &amp; drop files here</strong><br>or click to browse<br><span style="font-size:0.85em; color:var(--earth-sand)">.srt, .vtt, .txt, .docx, .xliff, .json — max 50 MB</span></div>
@@ -593,6 +598,7 @@ body { background: var(--white-soft); font-family: var(--font-body); color: var(
   <div class="footer-full">B.R.I.D.G.E.T. &mdash; Bridge Rights In Digital Global Education through Translation</div>
   <div class="footer-links"><a href="/">Home</a><a href="/app">Demo</a><a href="#start">Contact</a><a href="mailto:bridget7@proton.me">bridget7@proton.me</a></div>
   <div class="footer-copy">&copy; 2026 BRIDGET. Built by Suan Im.</div>
+  <div class="footer-legal-links"><a href="/tos">Terms of Service</a><span>|</span><a href="/privacy">Privacy Policy</a></div>
 </footer>
 
 <script>

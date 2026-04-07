@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — BRIDGET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-mid: #3a3a5a;
+    --ink-light: #6a6a8a;
+    --ink-faint: #a0a0c0;
+    --paper: #faf9f6;
+    --paper-warm: #f4f0e8;
+    --accent: #c4501a;
+    --rule: #d8d0c0;
+    --rule-light: #ede8e0;
+    --display: 'Playfair Display', Georgia, serif;
+    --body-serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body-serif);
+    font-weight: 300; font-size: 16px; line-height: 1.85;
+  }
+
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--paper); border-bottom: 1px solid var(--rule);
+    height: 58px; padding: 0 48px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { font-family: var(--display); font-size: 17px; font-weight: 600; letter-spacing: 0.1em; color: var(--ink); text-decoration: none; }
+  .logo em { color: var(--accent); font-style: normal; }
+  .nav { display: flex; gap: 28px; list-style: none; }
+  .nav a { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); text-decoration: none; transition: color 0.2s; }
+  .nav a:hover, .nav a.on { color: var(--accent); }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 110px 40px 100px; }
+
+  .hero { border-bottom: 2px solid var(--ink); padding-bottom: 44px; margin-bottom: 52px; }
+  .hero-eyebrow { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  .hero-title { font-family: var(--display); font-size: clamp(30px, 5vw, 46px); font-weight: 600; line-height: 1.15; color: var(--ink); margin-bottom: 6px; }
+  .hero-sub { font-family: var(--display); font-size: clamp(15px, 2vw, 19px); font-style: italic; color: var(--ink-faint); margin-bottom: 22px; }
+  .hero-meta { display: flex; flex-wrap: wrap; gap: 28px; }
+  .meta-item { font-family: var(--sans); font-size: 12px; color: var(--ink-light); }
+  .meta-item b { color: var(--ink); font-weight: 500; }
+
+  .toc { background: var(--paper-warm); border: 1px solid var(--rule); border-left: 3px solid var(--accent); padding: 24px 28px; margin-bottom: 52px; }
+  .toc-label { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 14px; }
+  .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 20px; list-style: none; }
+  .toc-grid a { font-family: var(--sans); font-size: 12.5px; color: var(--ink-light); text-decoration: none; transition: color 0.2s; display: flex; align-items: baseline; gap: 7px; }
+  .toc-grid a:hover { color: var(--accent); }
+  .toc-n { font-size: 10px; color: var(--accent); font-weight: 500; min-width: 22px; }
+
+  .sec { margin-bottom: 48px; scroll-margin-top: 76px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--rule); padding-bottom: 10px; margin-bottom: 20px; }
+  .sec-n { font-family: var(--display); font-style: italic; font-size: 12px; color: var(--accent); min-width: 28px; }
+  .sec-title { font-family: var(--display); font-size: 19px; font-weight: 600; color: var(--ink); }
+  .sec-body { padding-left: 42px; }
+
+  p.txt { margin-bottom: 14px; color: var(--ink-mid); }
+
+  .arts { list-style: none; margin-bottom: 14px; }
+  .arts li { display: flex; gap: 10px; margin-bottom: 10px; line-height: 1.8; }
+  .art-n { font-family: var(--sans); font-size: 12px; font-weight: 500; color: var(--accent); min-width: 22px; padding-top: 2px; }
+  .art-t { flex: 1; color: var(--ink-mid); }
+
+  .sub { list-style: none; margin: 10px 0 12px 18px; border-left: 2px solid var(--rule-light); padding-left: 16px; }
+  .sub li { font-size: 14px; color: var(--ink-light); margin-bottom: 7px; line-height: 1.75; }
+  .sub li::before { content: attr(data-m) "  "; color: var(--accent); font-weight: 500; font-size: 11px; }
+
+  .jur { display: inline-block; font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border: 1px solid currentColor; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  .jur-eu { color: #2060a0; }
+  .jur-us { color: #a04020; }
+  .jur-all { color: #206040; }
+
+  .imp { background: var(--paper-warm); border: 1px solid var(--rule); padding: 16px 20px; margin: 16px 0; font-size: 14px; color: var(--ink-mid); line-height: 1.8; }
+  .imp strong { color: var(--ink); font-weight: 500; }
+
+  /* DATA TABLE */
+  .dtable { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+  .dtable th { background: var(--paper-warm); border: 1px solid var(--rule); padding: 9px 13px; text-align: left; font-family: var(--sans); font-weight: 500; font-size: 11.5px; color: var(--ink); letter-spacing: 0.04em; }
+  .dtable td { border: 1px solid var(--rule); padding: 9px 13px; color: var(--ink-light); vertical-align: top; line-height: 1.7; }
+  .dtable tr:hover td { background: #fdfcfa; }
+
+  /* RIGHTS GRID */
+  .rights { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+  .right-card { border: 1px solid var(--rule); padding: 14px 16px; background: var(--paper-warm); }
+  .right-title { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 5px; }
+  .right-card p { font-size: 13px; color: var(--ink-light); line-height: 1.7; }
+
+  /* CONTACT DARK BOX */
+  .contact-dark { background: var(--ink); padding: 22px 26px; margin: 14px 0; }
+  .contact-dark-title { font-family: var(--display); font-size: 14px; font-weight: 600; color: #e8e0d0; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .contact-dark p { font-size: 13px; color: #9898b8; line-height: 1.8; }
+  .contact-dark a { color: var(--accent); text-decoration: none; }
+
+  .footer { margin-top: 72px; padding-top: 28px; border-top: 2px solid var(--ink); display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 14px; }
+  .footer-brand { font-family: var(--display); font-size: 18px; font-weight: 600; letter-spacing: 0.08em; color: var(--ink); }
+  .footer-brand em { color: var(--accent); font-style: normal; }
+  .footer-links { display: flex; gap: 20px; list-style: none; }
+  .footer-links a { font-family: var(--sans); font-size: 11.5px; color: var(--ink-light); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-copy { font-family: var(--sans); font-size: 11px; color: var(--ink-faint); margin-top: 10px; width: 100%; }
+  a.inline { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+
+  @media (max-width: 600px) {
+    .page { padding: 96px 22px 80px; }
+    .topbar { padding: 0 22px; }
+    .nav { display: none; }
+    .sec-body { padding-left: 0; }
+    .toc-grid, .rights { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="logo" href="#">BRIDG<em>E</em>T</a>
+  <ul class="nav">
+    <li><a href="/tos">Terms of Service</a></li>
+    <li><a href="/privacy" class="on">Privacy Policy</a></li>
+    <li><a href="/">Home</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="hero">
+    <p class="hero-eyebrow">Legal Document</p>
+    <h1 class="hero-title">Privacy Policy</h1>
+    <p class="hero-sub">BRIDGET AI Translation Platform</p>
+    <div class="hero-meta">
+      <span class="meta-item"><b>Effective Date</b> April 7, 2026</span>
+      <span class="meta-item"><b>Version</b> 1.0</span>
+      <span class="meta-item"><b>Applicable Law</b> GDPR · CCPA/CPRA · Korean PIPA</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <p class="toc-label">Table of Contents</p>
+    <ul class="toc-grid">
+      <li><a href="#p1"><span class="toc-n">01</span> Who We Are</a></li>
+      <li><a href="#p2"><span class="toc-n">02</span> Data We Collect</a></li>
+      <li><a href="#p3"><span class="toc-n">03</span> How We Use Data</a></li>
+      <li><a href="#p4"><span class="toc-n">04</span> Legal Basis (GDPR)</a></li>
+      <li><a href="#p5"><span class="toc-n">05</span> Data Retention &amp; Deletion</a></li>
+      <li><a href="#p6"><span class="toc-n">06</span> Third-Party Processors</a></li>
+      <li><a href="#p7"><span class="toc-n">07</span> International Transfers</a></li>
+      <li><a href="#p8"><span class="toc-n">08</span> Your Rights</a></li>
+      <li><a href="#p9"><span class="toc-n">09</span> Cookies</a></li>
+      <li><a href="#p10"><span class="toc-n">10</span> Children's Privacy</a></li>
+      <li><a href="#p11"><span class="toc-n">11</span> EU / EEA Residents</a></li>
+      <li><a href="#p12"><span class="toc-n">12</span> California Residents (CCPA)</a></li>
+      <li><a href="#p13"><span class="toc-n">13</span> Security</a></li>
+      <li><a href="#p14"><span class="toc-n">14</span> Changes to This Policy</a></li>
+      <li><a href="#p15"><span class="toc-n">15</span> Contact &amp; DPO</a></li>
+    </ul>
+  </div>
+
+  <!-- 1 -->
+  <section class="sec" id="p1">
+    <div class="sec-head"><span class="sec-n">01</span><h2 class="sec-title">Who We Are</h2></div>
+    <div class="sec-body">
+      <p class="txt">BRIDGET ("we," "us," or "our") is an AI-powered translation service operated by Im Suan, Republic of Korea. We are the data controller for personal data processed through our platform. Contact: <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a></p>
+      <p class="txt">This Privacy Policy describes how we collect, use, store, share, and protect your personal data when you use the BRIDGET service, and explains your rights under applicable laws including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), and the Korean Personal Information Protection Act (PIPA).</p>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="sec" id="p2">
+    <div class="sec-head"><span class="sec-n">02</span><h2 class="sec-title">Data We Collect</h2></div>
+    <div class="sec-body">
+      <table class="dtable">
+        <thead>
+          <tr><th>Category</th><th>Examples</th><th>How Collected</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Identity</td><td>Name, email address</td><td>Registration / account creation</td></tr>
+          <tr><td>Business / Contact</td><td>Company name, job title, phone</td><td>B2B onboarding</td></tr>
+          <tr><td>Payment</td><td>Billing address, last 4 digits of card (we do not store full card numbers — handled by PCI-DSS compliant payment processor)</td><td>Checkout</td></tr>
+          <tr><td>Usage Data</td><td>IP address, browser type, pages visited, features used, timestamps</td><td>Automatically via cookies / server logs</td></tr>
+          <tr><td>Translation Content</td><td>Source documents / text submitted for translation</td><td>You upload / submit directly</td></tr>
+          <tr><td>Communications</td><td>Support emails, feedback</td><td>You contact us</td></tr>
+        </tbody>
+      </table>
+      <p class="txt" style="font-size:13.5px; margin-top:4px;">We do <strong>not</strong> collect special categories of data (health, biometric, racial/ethnic origin, religious beliefs, etc.) intentionally. Please do not submit such data unless strictly necessary.</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="sec" id="p3">
+    <div class="sec-head"><span class="sec-n">03</span><h2 class="sec-title">How We Use Your Data</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">3.1</span><span class="art-t"><b>Provide the Service</b> — process translation requests, deliver outputs, maintain your account.</span></li>
+        <li><span class="art-n">3.2</span><span class="art-t"><b>Billing &amp; Payments</b> — process fees, issue invoices, manage subscriptions.</span></li>
+        <li><span class="art-n">3.3</span><span class="art-t"><b>Service Communications</b> — send transactional emails (confirmations, receipts, security alerts). These cannot be opted out of while using the Service.</span></li>
+        <li><span class="art-n">3.4</span><span class="art-t"><b>Support</b> — respond to inquiries and resolve issues.</span></li>
+        <li><span class="art-n">3.5</span><span class="art-t"><b>Legal Compliance</b> — comply with applicable law, enforce our Terms, prevent fraud and abuse.</span></li>
+        <li><span class="art-n">3.6</span><span class="art-t"><b>What We Do NOT Do With Your Data:</b>
+          <ul class="sub">
+            <li data-m="✗">Sell your personal data to third parties.</li>
+            <li data-m="✗">Use your Source Content or Translation Outputs to train AI models.</li>
+            <li data-m="✗">Share your data with advertisers.</li>
+            <li data-m="✗">Use your data for automated profiling that produces legal or similarly significant effects without human review.</li>
+          </ul>
+        </span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="sec" id="p4">
+    <div class="sec-head"><span class="sec-n">04</span><h2 class="sec-title">Legal Basis for Processing <span class="jur jur-eu">GDPR</span></h2></div>
+    <div class="sec-body">
+      <table class="dtable">
+        <thead>
+          <tr><th>Purpose</th><th>Legal Basis (GDPR Art. 6)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Providing the translation service</td><td>Contract performance (Art. 6(1)(b))</td></tr>
+          <tr><td>Billing and payment processing</td><td>Contract performance (Art. 6(1)(b))</td></tr>
+          <tr><td>Legal compliance (tax, fraud prevention)</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
+          <tr><td>Security monitoring, abuse prevention</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+          <tr><td>Service improvement analytics (aggregated)</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+          <tr><td>Marketing communications (if opted in)</td><td>Consent (Art. 6(1)(a)) — you can withdraw at any time</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="sec" id="p5">
+    <div class="sec-head"><span class="sec-n">05</span><h2 class="sec-title">Data Retention &amp; Deletion</h2></div>
+    <div class="sec-body">
+      <table class="dtable">
+        <thead>
+          <tr><th>Data Type</th><th>Retention Period</th><th>Basis</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Account information</td><td>Duration of account + 1 year after closure</td><td>Contract / legal compliance</td></tr>
+          <tr><td>Translation Source Content</td><td>Deleted within <strong>30 days</strong> of translation completion</td><td>Data minimization principle</td></tr>
+          <tr><td>Translation Outputs</td><td>30 days (or until you download/delete)</td><td>Service delivery</td></tr>
+          <tr><td>Transaction / billing records</td><td>7 years</td><td>Tax and accounting law</td></tr>
+          <tr><td>Server / access logs</td><td>90 days</td><td>Security / abuse prevention</td></tr>
+          <tr><td>Support communications</td><td>3 years after resolution</td><td>Dispute resolution</td></tr>
+        </tbody>
+      </table>
+      <p class="txt" style="font-size:13.5px; margin-top:6px;">You may request earlier deletion of your data at any time (see Your Rights, Section 8). We will honor deletion requests within 30 days, subject to legal retention obligations.</p>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="sec" id="p6">
+    <div class="sec-head"><span class="sec-n">06</span><h2 class="sec-title">Third-Party Processors</h2></div>
+    <div class="sec-body">
+      <p class="txt">We share data only with trusted processors bound by data processing agreements (DPAs) that prohibit unauthorized use of your data. We do not sell data to any third party.</p>
+      <table class="dtable">
+        <thead>
+          <tr><th>Processor</th><th>Location</th><th>Purpose</th><th>No AI Training</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Anthropic</td><td>USA</td><td>AI translation API</td><td>✓ Contractually confirmed</td></tr>
+          <tr><td>Cloud Infrastructure Provider<br><span style="font-size:12px; color:var(--ink-faint);">(AWS / GCP / equivalent)</span></td><td>Varies</td><td>Hosting &amp; storage</td><td>✓ Data isolated</td></tr>
+          <tr><td>Payment Processor<br><span style="font-size:12px; color:var(--ink-faint);">(Stripe / Lemon Squeezy)</span></td><td>USA</td><td>Payment processing</td><td>N/A</td></tr>
+          <tr><td>Email Service Provider</td><td>Varies</td><td>Transactional emails</td><td>N/A</td></tr>
+        </tbody>
+      </table>
+      <p class="txt" style="font-size:13.5px;">We do not allow any processor to use your personal data for their own purposes beyond providing services to us.</p>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="sec" id="p7">
+    <div class="sec-head"><span class="sec-n">07</span><h2 class="sec-title">International Data Transfers</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">7.1</span><span class="art-t">BRIDGET is based in the Republic of Korea. Data you provide may be transferred to and processed in countries outside your country of residence, including the United States and South Korea.</span></li>
+        <li><span class="art-n">7.2</span><span class="art-t"><span class="jur jur-eu">EU/EEA/UK</span> For transfers of personal data from the EU/EEA/UK to third countries, we rely on: (a) European Commission adequacy decisions where available, or (b) Standard Contractual Clauses (SCCs) approved by the European Commission, or (c) the UK International Data Transfer Agreement (IDTA) for UK transfers.</span></li>
+        <li><span class="art-n">7.3</span><span class="art-t">You may request a copy of the applicable transfer safeguards by emailing <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a>.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="sec" id="p8">
+    <div class="sec-head"><span class="sec-n">08</span><h2 class="sec-title">Your Rights</h2></div>
+    <div class="sec-body">
+      <p class="txt">Depending on your location, you may have some or all of the following rights regarding your personal data:</p>
+      <div class="rights">
+        <div class="right-card">
+          <p class="right-title">Access</p>
+          <p>Request a copy of the personal data we hold about you.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Rectification</p>
+          <p>Correct inaccurate or incomplete personal data.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Erasure ("Right to be Forgotten")</p>
+          <p>Request deletion of your personal data, subject to legal retention obligations.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Restriction</p>
+          <p>Ask us to restrict processing of your data in certain circumstances.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Portability <span class="jur jur-eu" style="font-size:9px;">GDPR</span></p>
+          <p>Receive your data in a structured, machine-readable format.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Object</p>
+          <p>Object to processing based on legitimate interests or for direct marketing.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Withdraw Consent</p>
+          <p>Withdraw consent at any time where processing is consent-based.</p>
+        </div>
+        <div class="right-card">
+          <p class="right-title">Opt-Out of Sale <span class="jur jur-us" style="font-size:9px;">CCPA</span></p>
+          <p>We do not sell your personal data. No opt-out is needed, but you may request confirmation.</p>
+        </div>
+      </div>
+      <div class="imp" style="margin-top:14px;">
+        <strong>How to exercise your rights:</strong> Email <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a> with the subject line "Privacy Rights Request." We will respond within <strong>30 days</strong> (GDPR standard) or <strong>45 days</strong> (CCPA standard). We may need to verify your identity before fulfilling requests.
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="sec" id="p9">
+    <div class="sec-head"><span class="sec-n">09</span><h2 class="sec-title">Cookies &amp; Tracking</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">9.1</span><span class="art-t"><b>Essential Cookies</b> — Required for the Service to function (session management, authentication). Cannot be disabled.</span></li>
+        <li><span class="art-n">9.2</span><span class="art-t"><b>Analytics Cookies</b> — Help us understand usage patterns. Used only in aggregate. You may opt out.</span></li>
+        <li><span class="art-n">9.3</span><span class="art-t"><b>No Advertising Cookies.</b> We do not use advertising or third-party tracking cookies.</span></li>
+        <li><span class="art-n">9.4</span><span class="art-t"><span class="jur jur-eu">EU/UK</span> Non-essential cookies are only set with your explicit consent via our cookie consent mechanism. You may withdraw consent at any time.</span></li>
+        <li><span class="art-n">9.5</span><span class="art-t"><span class="jur jur-us">US</span> We honor Global Privacy Control (GPC) signals as an opt-out of data sharing where required by applicable state law.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="sec" id="p10">
+    <div class="sec-head"><span class="sec-n">10</span><h2 class="sec-title">Children's Privacy</h2></div>
+    <div class="sec-body">
+      <p class="txt">The Service is not directed to children under 18 years of age. We do not knowingly collect personal data from anyone under 18. If we become aware that we have collected data from a child under 18, we will delete it promptly. If you believe we have inadvertently collected such data, please contact us at <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a>.</p>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="sec" id="p11">
+    <div class="sec-head"><span class="sec-n">11</span><h2 class="sec-title">Additional Notice for EU / EEA / UK Residents <span class="jur jur-eu">GDPR</span></h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">11.1</span><span class="art-t">BRIDGET acts as <b>data controller</b> for personal data you submit directly. Where we use sub-processors (Section 6), they act as data processors.</span></li>
+        <li><span class="art-n">11.2</span><span class="art-t"><b>Data Protection Officer (DPO):</b> Im Suan — <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a></span></li>
+        <li><span class="art-n">11.3</span><span class="art-t"><b>Breach Notification.</b> In the event of a personal data breach that poses a risk to your rights, we will notify the relevant supervisory authority within 72 hours and notify affected individuals without undue delay where required.</span></li>
+        <li><span class="art-n">11.4</span><span class="art-t"><b>Supervisory Authority.</b> You have the right to lodge a complaint with your local supervisory authority. A list of EU supervisory authorities is available at <a class="inline" href="https://edpb.europa.eu" target="_blank" rel="noopener">edpb.europa.eu</a>.</span></li>
+        <li><span class="art-n">11.5</span><span class="art-t"><b>Automated Decision-Making.</b> We do not make decisions about you solely through automated means that produce legal or similarly significant effects. Human review is available upon request.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="sec" id="p12">
+    <div class="sec-head"><span class="sec-n">12</span><h2 class="sec-title">Additional Notice for California Residents <span class="jur jur-us">CCPA/CPRA</span></h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">12.1</span><span class="art-t"><b>No Sale or Sharing.</b> BRIDGET does not sell or share (as defined under CCPA/CPRA) your personal information for cross-context behavioral advertising.</span></li>
+        <li><span class="art-n">12.2</span><span class="art-t"><b>No Sensitive Data Processing.</b> We do not use sensitive personal information (as defined by CPRA) for purposes beyond providing the Service.</span></li>
+        <li><span class="art-n">12.3</span><span class="art-t"><b>Categories Collected (last 12 months):</b> Identifiers, commercial information, internet/network activity, and translation content (professional/employment information may be present in submitted documents).</span></li>
+        <li><span class="art-n">12.4</span><span class="art-t"><b>Your CCPA Rights:</b> Right to know, right to delete, right to correct, right to portability, right to opt out of sale/sharing, right to non-discrimination. To exercise, email <a class="inline" href="mailto:bridget7@proton.me">bridget7@proton.me</a>.</span></li>
+        <li><span class="art-n">12.5</span><span class="art-t"><b>Non-Discrimination.</b> We will not discriminate against you for exercising your CCPA rights.</span></li>
+        <li><span class="art-n">12.6</span><span class="art-t"><b>Response Time.</b> We respond to verifiable consumer requests within 45 days, with one possible 45-day extension.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section class="sec" id="p13">
+    <div class="sec-head"><span class="sec-n">13</span><h2 class="sec-title">Security</h2></div>
+    <div class="sec-body">
+      <ul class="arts">
+        <li><span class="art-n">13.1</span><span class="art-t">We implement appropriate technical and organizational measures to protect your data, including TLS encryption in transit and encryption at rest.</span></li>
+        <li><span class="art-n">13.2</span><span class="art-t">Access to your personal data is limited to personnel who need it to perform their job functions, and they are bound by confidentiality obligations.</span></li>
+        <li><span class="art-n">13.3</span><span class="art-t">No method of electronic transmission or storage is 100% secure. While we strive to protect your data, we cannot guarantee absolute security. In the event of a breach affecting your rights, we will notify you promptly.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 14 -->
+  <section class="sec" id="p14">
+    <div class="sec-head"><span class="sec-n">14</span><h2 class="sec-title">Changes to This Policy</h2></div>
+    <div class="sec-body">
+      <p class="txt">We may update this Privacy Policy periodically. When we make material changes, we will notify you via email or prominent notice on the Service at least <strong>30 days</strong> before the change takes effect. The "Effective Date" at the top of this page reflects the most recent update.</p>
+      <p class="txt">We encourage you to review this Policy periodically. Continued use of the Service after any changes constitutes acceptance of the updated Policy.</p>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="sec" id="p15">
+    <div class="sec-head"><span class="sec-n">15</span><h2 class="sec-title">Contact &amp; Data Protection Officer</h2></div>
+    <div class="sec-body">
+      <div class="contact-dark">
+        <p class="contact-dark-title">Data Controller &amp; Data Protection Officer</p>
+        <p><b style="color:#e8e0d0;">Im Suan</b> — BRIDGET</p>
+        <p>Email: <a href="mailto:bridget7@proton.me">bridget7@proton.me</a></p>
+        <p style="margin-top:10px; font-size:12px; color:#7070a0;">For privacy rights requests, data breach reports, or DPA inquiries, please use the email above with the relevant subject line. We aim to respond within 5 business days for general inquiries and within statutory timeframes for rights requests.</p>
+      </div>
+      <p class="txt" style="font-size:13.5px; margin-top:14px;"><span class="jur jur-eu">EU/EEA/UK</span> If you are not satisfied with our response, you have the right to lodge a complaint with your local supervisory authority.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>
+      <div class="footer-brand">BRIDG<em>E</em>T</div>
+      <p class="footer-copy">© 2026 BRIDGET. All rights reserved. Every language is a bridge worth crossing.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="/tos">Terms of Service</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="mailto:bridget7@proton.me">Contact</a></li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
